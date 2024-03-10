@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="mediaqueries.css" /> -->
     <title>Dinnuhoni</title>
   </head>
   <body>
@@ -13,40 +14,14 @@
       <div class="logo">DTR</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About me</a></li>
-          <!-- <li><a href="#education"></a>Education</li> -->
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#profile">About me</a></li>
+          <li><a href="#experiences">Education</a></li>
+          <li><a href="#projects">Certificates</a></li>
+          <li><a href="#contact">Social Media</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about ">About</a></li>
-          <!-- <li><a href="#education">Education</a></li> -->
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <img
-              id="modeToggle2"
-              class="icon color-icon"
-              src="./assets/theme_light.png"
-              src-light="./assets/theme_light.png"
-              src-dark="./assets/theme_dark.png"
-              alt="Color them icon"
-              />
-            </li>
-          </div>
-        </div>
-    </nav>
+    
     <section id="profile">
       <div class="section__pic-container">
         <img src="img/dinu.jpg" alt="dinu" />
@@ -62,30 +37,16 @@
           I believe that practical experiences enrich my comprehension of the Information Systems field. 
           Always open to learning and discussions, and ready to explore the potential of technology in creating positive impacts.
         </p>
+        <br>
         <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-1" onclick="location.href='./#kontak'">
+            Contact Me
           </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="/assets/linkedin.png"
-            class="icon"
-            onclick="location.href='https://linkedin.com/';"
-            alt=""
-          />
-          <img
-            src="/assets/github.png"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-            alt=""
-          />
         </div>
       </div>
     </section>
 
-
-    <div id="education">
+    <section class="aboutme" id="experiences">
       <p class="section__text__p1">My Education</p>
       <h1 class="title">Education</h1>
       <div class="section-container">
@@ -139,373 +100,97 @@
                     <p>2022 - Sekarang</p>
                   </div>
                 </div>
-                </div>
+              </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
-    <!-- <div id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-expe-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+        <!-- -------------- CERTIFICATE SLIDER---------------- -->
+        <section class="certificate" id="projects">
+          <br><br><br><br><br>
+          <p class="section__text__p1">My Certificate</p>
+          <h1 class="title">Certificates</h1>
+          <div class="slider">
+              <div class="list">
+                  <div class="item">
+                      <img src="img/sertif-1.png" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/sertif-2.png" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/sertif-3.png" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/sertif-4.png" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/sertif-5.png" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/sertif-6.png" alt="">
+                  </div>
+                  <div class="item">
+                      <img src="img/sertif-7.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="img/sertif-8.png" alt="">
                 </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+                <div class="item">
+                  <img src="img/sertif-9.png" alt="">
+              </div>
+              <div class="item">
+                <img src="img/sertif-10.png" alt="">
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon"
-                  src="/assets/checkmark.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+              </div>
+              <div class="buttons">
+                  <button id="prev"><</button>
+                  <button id="next">></button>
+              </div>
+              <ul class="dots">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
           </div>
         </div>
-      </div>
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        alt=""
-      />
-    </div> -->
+      </section>
+
+      <section class="kontak" id="kontak">
+        <div class="teks_kontak">
+          <p class="section__text__p1">Contact Me</p>
+          <h1 class="title">Contact Me</h1>
+            <br>
+            <p>
+              For any inquiries, collaborations, or projects you'd like to discuss,
+              feel free to contact me.
+            </p>
+            <div class="daftar_kontak">
+                <li><i class="bx bxs-send"></i> dinnuhoni@gmail.com</li>
+                <li><i class="bx bxs-phone"></i> +628134732892</li>
+            </div>
+        </div>
+        <div class="formulir_kontak">
+            <form action="https://formspree.io/f/mwkdvogq" method="POST" target="_blank">
+                <input type="text" name="Name" placeholder="Input your name" required>
+                <input type="email" name= "Email" placeholder="Input your email" required>
+                <textarea cols="30" name="Message" rows="10" placeholder="Input Your Message" required></textarea>
+                <input type="submit" value="Send" class="kirim">
+            </form>
+        </div>
+    </section>
+
     
-    <div id="projects">
-      <p class="section__text__p2">Certificates</p>
-
-      <h1 class="title">Certificates</h1>
-      <div class="about-expe-containers">
-
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- SERTIFIKAT 1 -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="img/sertif-1.png"
-                alt="project-1"
-              />
-            </div>    
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                >
-                  Staff Departmen KPSDM
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- SERTIFIIKAT 2 -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="img/sertif-2.png"
-                alt="project-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                >
-                  Peserta GEAR 2022
-                </button>
-              </div>
-            </div>
-            </div>
-            <!-- SERIFIKAT 3 -->
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  class="project-img"
-                  src="img/sertif-3.png"
-                  alt="project-1"
-                />
-              </div>    
-              <h2 class="experience-sub-title project-title"></h2>
-              <div class="btn-container">
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                  >
-                    Panitia Pelaksana Musyawarah Besar 2023
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- SERTIFIKAT 4 -->
-            <!-- SERTIFIKAT 1 -->
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  class="project-img"
-                  src="img/sertif-4.png"
-                  alt="project-1"
-                />
-              </div>    
-              <h2 class="experience-sub-title project-title"></h2>
-              <div class="btn-container">
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                  >
-                    Peserta Seminar Teknologi
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- SERTIFIIKAT 2 -->
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  class="project-img"
-                  src="img/sertif-5.png"
-                  alt="project-1"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title"></h2>
-              <div class="btn-container">
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                  >
-                    Peserta Seminar Literasi Digital Perguruan Tinggi
-                  </button>
-                </div>
-              </div>
-              </div>
-              <!-- SERIFIKAT 3 -->
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img
-                    class="project-img"
-                    src="img/sertif-6.png"
-                    alt="project-1"
-                  />
-                </div>    
-                <h2 class="experience-sub-title project-title"></h2>
-                <div class="btn-container">
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                    >
-                      Peserta Onboarding Talenta Wirausaha BSI Kota Samarinda
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- SERTIFIKAT 4 -->
-              <!-- SERTIFIKAT 1 -->
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img
-                    class="project-img"
-                    src="img/sertif-7.png"
-                    alt="project-1"
-                  />
-                </div>    
-                <h2 class="experience-sub-title project-title"></h2>
-                <div class="btn-container">
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                    >
-                      Panitia Malam Keakraban Sistem Informasi 2022
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- SERTIFIIKAT 2 -->
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img
-                    class="project-img"
-                    src="img/sertif-8.png"
-                    alt="project-1"
-                  />
-                </div>
-                <h2 class="experience-sub-title project-title"></h2>
-                <div class="btn-container">
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                    >
-                      Peserta APLIKASI 2022
-                    </button>
-                  </div>
-                </div>
-                </div>
-                <!-- SERIFIKAT 3 -->
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      class="project-img"
-                      src="img/sertif-9.png"
-                      alt="project-1"
-                    />
-                  </div>    
-                  <h2 class="experience-sub-title project-title"></h2>
-                  <div class="btn-container">
-                    <div class="btn-container">
-                      <button
-                        class="btn btn-color-2 project-btn"
-                      >
-                        Koordinator Sponsorship dan Dana
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- SERTIFIKAT 4 -->
-                <!-- SERTIFIKAT 1 -->
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      class="project-img"
-                      src="img/sertif-10.png"
-                      alt="project-1"
-                    />
-                  </div>    
-                  <h2 class="experience-sub-title project-title"></h2>
-                  <div class="btn-container">
-                    <div class="btn-container">
-                      <button
-                        class="btn btn-color-2 project-btn"
-                      >
-                        Pemateri APLIKASI 2023
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                  <!-- SERTIFIKAT 4 -->
-          </div>
-      </div>
-    </div>
-      <img
-        src="/assets/arrow.png"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        alt=""
-      />
-    </div>
-
     <section id="contact">
-      <p class="section__text__p1">Get In Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <br>
+      <br><p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Social Media</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -519,7 +204,15 @@
         onclick="location.href='./#contact'"
 
           />
-          <p><a href="https://www.instagram.com/dinnutr_">Instagram</a></p>
+          <p><a href="https://www.instagram.com/dinnutr_">dinnutr_</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="img/linkedin.png" width="40px"
+        onclick="location.href='./#contact'"
+
+          />
+          <p><a href="https://www.linkedin.com/in/dinnuhonitrahutomo23/">Linkedin</a></p>
         </div>
       </div>
     </section>
@@ -527,16 +220,73 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="#education"></a>Education</li> -->
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#profile">About</a></li>
+            <li><a href="#experiences">Education</a></li>
+            <li><a href="#projects">Certificates</a></li>
+            <li><a href="#contact">Social Media</a></li>
           </ul>
         </div>
       </nav>
       <p>Copyright &#169; 2024 Dinnuhoni. All Rights Reserved</p>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const prevButton = document.getElementById("prev");
+            const nextButton = document.getElementById("next");
+            const slides = document.querySelectorAll(".item");
+            const dots = document.querySelectorAll(".dots li");
+            let currentIndex = 0;
+    
+            // Function to show slide
+            function showSlide(index) {
+                slides.forEach(function(slide) {
+                    slide.style.display = "none";
+                });
+                dots.forEach(function(dot) {
+                    dot.classList.remove("active");
+                });
+    
+                slides[index].style.display = "block";
+                dots[index].classList.add("active");
+            }
+    
+            // Function to handle next slide
+            function nextSlide() {
+                currentIndex++;
+                if (currentIndex >= slides.length) {
+                    currentIndex = 0;
+                }
+                showSlide(currentIndex);
+            }
+    
+            // Function to handle previous slide
+            function prevSlide() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = slides.length - 1;
+                }
+                showSlide(currentIndex);
+            }
+    
+            // Show the initial slide
+            showSlide(currentIndex);
+    
+            // Event listeners for next and previous buttons
+            nextButton.addEventListener("click", nextSlide);
+            prevButton.addEventListener("click", prevSlide);
+    
+            // Event listener for dots
+            dots.forEach(function(dot, index) {
+                dot.addEventListener("click", function() {
+                    currentIndex = index;
+                    showSlide(currentIndex);
+                });
+            });
+        });
+    </script>
+    
+    
     </footer>
-    <!-- <script src="script.js"></script> -->
+    
   </body>
 </html>
