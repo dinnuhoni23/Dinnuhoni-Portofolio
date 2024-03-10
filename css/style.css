@@ -1,6 +1,12 @@
 /* GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --warna1: #322f2f;
+  --warna2: #a7a9be;
+  --warna3: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +26,12 @@ p,
 }
 
 /* FLEXED ELEMENTS */
+@media screen and (max-width: 768px){
+  .nav{
+      height: 400px;
+  }
+}
+
 article,
 nav,
 #contact,
@@ -116,6 +128,11 @@ nav {
   position: relative;
 }
 
+
+.aboutme{
+  margin-top: 100px;
+}
+
 section {
   padding-top: 4vh;
   height: 75vh;
@@ -138,7 +155,7 @@ section {
 
 .section-container,
 .experience-details-container {
-  height: 80%;
+  height: 100%;
 }
 
 .title {
@@ -164,6 +181,7 @@ footer p,
 .section__text__p2 {
   text-align: center;
   margin: 50px;
+  display: contents;
 }
 
 /* TRANSITIONS */
@@ -307,7 +325,7 @@ article {
 }
 
 #contact {
-  height: 70vh;
+  height: 100vh;
 }
 
 .contact-info-container,
@@ -417,6 +435,346 @@ footer {
   transform: none;
 }
 
+
+
+/* ----- CERTIFICATE SLIDER ----- */
+.slider{
+  width: 1100px;
+  max-width: 100vw;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider .list{
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+
+.slider .list img{
+  width: 1100px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: contain;
+  left: 0;
+}
+.slider .buttons{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .buttons button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(76, 75, 90, 0.333);
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.slider .dots{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider .dots li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(76, 75, 90, 0.333);
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active{
+  width: 30px;
+}
+
+@media only screen and (max-width: 490px) {
+  .konten_sertifikat{
+      grid-template-columns: repeat(3, minmax(auto, auto));
+  }
+}
+
+/* ========== BAGIAN KONTAK ========== */
+.kontak {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  padding-left: 30px;
+  margin-top: 200px;
+}
+
+.teks_kontak h2 {
+  font-size: 90px;
+  line-height: 1;
+  align-items: center;
+}
+
+.teks_kontak h2 span {
+  color: var(--warna2);
+}
+
+.teks_kontak h4 {
+  margin: 15px 0;
+  color: var(--warna1);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.teks_kontak p {
+  color: var(--warna2);
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+
+.daftar_kontak {
+  margin-bottom: 3rem;
+}
+
+.daftar_kontak li {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.daftar_kontak i {
+  display: inline-block;
+  color: var(--warna2);
+  font-size: 20px;
+  font-weight: 600;
+  transition: all .40s ease;
+}
+
+.daftar_kontak li a:hover {
+  transform: scale(1.01) translateY(-5px);
+  color: var(--warna2);
+}
+
+.ikon_kontak i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid var(--warna2);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--warna2);
+  text-decoration: none;
+  margin: 30px 15px 10px 0;
+  transition: .5s ease;
+  opacity: 0;
+  animation: geserKiri 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.ikon_kontak i:hover {
+  background: var(--warna1);
+  color: var(--warna3);
+  box-shadow: 0 0 20px var(--warna2);
+}
+
+.daftar_kontak i:hover {
+  background: var(--warna2);
+  color: var(--warna1);
+  box-shadow: 0 0 20px var(--warna2);
+}
+
+.formulir_kontak form {
+  position: relative;
+}
+
+.formulir_kontak form input,
+form textarea {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 10px;
+  background: var(--warna3);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  border-radius: .5rem;
+}
+
+.formulir_kontak textarea {
+  resize: none;
+  height: 220px;
+}
+
+.formulir_kontak form .kirim {
+  display: inline-block;
+  padding: 14px 60px;
+  background: var(--warna1);
+  border-radius: 40px;
+  font-size: 18px;
+  color: rgb(255, 253, 253);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: geserAtas 1s ease forwards;
+  animation-delay: 0.5s;
+  /* box-shadow: 0 0 5px var(--warna1), 0 0 25px var(--warna1); */
+}
+
+
+.formulir_kontak form .kirim:hover {
+  background:rgb(136, 147, 154);
+}
+
+/* ========== BAGIAN KONTAK ========== */
+
+/* ----- ABOUT INFO ----- */
+.about-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 40px 80px;
+    padding-inline: 20px;
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+}
+.about-info p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+}
+.about-btn button{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: var(--first-color);
+    color: var(--color-white);
+    border-radius: 30px;
+}
+.about-btn button:hover{
+    background: var(--first-color-hover);
+}
+
+
+/* ----- CERTIFICATE SLIDER ----- */
+.certificate{
+    margin-top: 100px;
+}
+.slider{
+    overflow: hidden;
+    width: 1100px;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.item {
+  display: none;
+  transition: transofrm 1.5s ease; 
+}
+
+.item.active {
+  display: block;
+  opacity: 1;
+}
+
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img{
+    width: 1100px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: contain;
+    left: 0;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(76, 75, 90, 0.333);
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(76, 75, 90, 0.333);
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+@keyframes geserAtas {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
 /* RESPONSIVENESS */
 @media only screen and (max-width: 768px) {
   nav {
@@ -451,6 +809,8 @@ footer {
     height: 300px;
     width: 300px;
   }
+
+
 
   footer {
     height: auto;
